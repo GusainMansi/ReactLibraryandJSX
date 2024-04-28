@@ -1,11 +1,10 @@
 
 function customRender(reactElement,container){
-const domElement=document.createElement
-(reactElement.type)
+const domElement=document.createElement(reactElement.type)
 domElement.innerHTML=reactElement.children
 for (const prop  in reactElement.props) {
-    if(prop==='children') continue;
-domElement.setAttribute(prop,reactElement.props[prop])
+    if(prop===children) continue
+domElement.setAttribute(prop,reactElement.props[props])
 }container.appendChild(domElement);
 }
 
@@ -16,7 +15,7 @@ const reactElement={
         target:'_blank'
     },
     //children property shows what content will be displayed
-    children:'Click me to visit google'
+    children:"Click me to visit google"
 }
 
 
